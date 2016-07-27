@@ -1,0 +1,56 @@
+//
+// hdg
+// --------------------------------------------------
+
+.hdg { font-family: NevisBold, sans-serif; }
+
+.hdg_1 { 
+	font-size: @font-size-h3; 
+	line-height: 1.5;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+
+.hdg_2 { font-size: @font-size-h1; }
+.hdg_3 { font-size: @font-size-h2; }
+
+.statement-header {
+    color: #fff;
+    text-align: center;
+    text-transform: lowercase;
+    font-family: vincehand_ii_trialregular, Georgia,serif;
+    font-size: @font-size-h1 * 1.25;
+}
+
+.mx-hdg_divider { 
+	position: relative;
+	margin-top: 70px;
+	margin-bottom: 50px; 
+	line-height: 1;
+	text-align: center;
+}
+
+.mx-hdg_divider:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	height: 1px;
+	background-color: #000000;
+}
+
+.mx-hdg_divider > * {
+	position: relative;
+	z-index: 5;
+	display: inline-block;
+	padding: 15px;
+	background-color: @gray-lighter;
+	
+}
+
+.mx-hdg_hand {
+	text-transform: lowercase;
+    font-family: vincehand_ii_trialregular, Georgia,serif;
+}

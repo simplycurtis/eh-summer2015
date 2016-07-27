@@ -1,0 +1,49 @@
+//
+// media
+// --------------------------------------------------
+
+.media {
+	.clearfix();
+}
+
+.media-md {
+	width: 100%;
+	
+}
+
+.media-bd {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.mx-media_divider .media-md {
+	padding-bottom: 5%;
+}
+
+@media screen and (min-width: 768px) {
+	.media-md {
+		float: left;
+		width: 50%;
+		margin-right: 5%;
+	}
+    .media-bd { 
+    	width: 45%; 
+    	text-align: left;
+    }
+
+    .mx-media_divider .media-md {
+		padding-right: 5%;
+		padding-bottom: 0;
+		border-right: 2px solid #fff;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+    .media-bd { width: 34%; }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .media-bd { width: 29%; }
+}

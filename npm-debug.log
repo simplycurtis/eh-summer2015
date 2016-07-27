@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'build-dist-win' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose run-script [ 'prebuild-dist-win', 'build-dist-win', 'postbuild-dist-win' ]
+5 info prebuild-dist-win build-tool@0.0.1
+6 info build-dist-win build-tool@0.0.1
+7 verbose unsafe-perm in lifecycle true
+8 info build-tool@0.0.1 Failed to exec build-dist-win script
+9 verbose stack Error: build-tool@0.0.1 build-dist-win: `echo 'building distro' && npm run dist-files && sh dist-make.sh`
+9 verbose stack spawn ENOENT
+9 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:17:16)
+9 verbose stack     at ChildProcess.emit (events.js:110:17)
+9 verbose stack     at maybeClose (child_process.js:1015:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+10 verbose pkgid build-tool@0.0.1
+11 verbose cwd S:\PROJECTS\EAGLE HILL CONSULTING\804871_EH Radio Ad\WEB ASSETS
+12 error Windows_NT 6.3.9600
+13 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "build-dist-win"
+14 error node v0.12.7
+15 error npm  v2.11.3
+16 error file C:\Windows\system32\cmd.exe
+17 error code ELIFECYCLE
+18 error errno ENOENT
+19 error syscall spawn
+20 error build-tool@0.0.1 build-dist-win: `echo 'building distro' && npm run dist-files && sh dist-make.sh`
+20 error spawn ENOENT
+21 error Failed at the build-tool@0.0.1 build-dist-win script 'echo 'building distro' && npm run dist-files && sh dist-make.sh'.
+21 error This is most likely a problem with the build-tool package,
+21 error not with npm itself.
+21 error Tell the author that this fails on your system:
+21 error     echo 'building distro' && npm run dist-files && sh dist-make.sh
+21 error You can get their info via:
+21 error     npm owner ls build-tool
+21 error There is likely additional logging output above.
+22 verbose exit [ 1, true ]

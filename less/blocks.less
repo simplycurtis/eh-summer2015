@@ -1,0 +1,85 @@
+//
+// blocks
+// --------------------------------------------------
+
+.blocks { 
+    box-sizing: border-box;
+    margin-bottom: -15px;
+    margin-left: -15px;
+    font-size: 0;
+
+    .clearfix();
+}
+
+.blocks > * {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: @font-size-base;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+}
+
+.mx-blocks_3up_retain > * { width: 33.333%; }
+.mx-blocks_center { text-align: center; }
+
+
+.mx-blocks_narrow { margin-left: 0; }
+
+.mx-blocks_narrow > * {
+  padding-right: 22%;
+  padding-left: 22%;
+}
+
+
+.mx-blocks_pianoSm {
+  > *:after {
+    content: " ";
+    display: table;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -75px;
+    height: 1px;
+    width: 150px;
+    background: @gray-border;
+  }
+  > *:last-child:after {
+    display: none !important; //important for strange Chrome glitch not respecting display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    > * {
+      padding-bottom: 35px;
+      margin-bottom: 35px;
+    }
+    > *:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .mx-blocks_3up_special > * { width: 50%; }
+}
+
+@media screen and (min-width: 768px) {
+    .blocks_2up > * { width: 50%; }
+    .blocks_3up > * { width: 33.333%; }
+    .blocks_4up > * { width: 50%; }
+
+    .mx-blocks_narrow > * {
+      padding-right: 3%;
+      padding-left: 3%;
+    }
+
+    .mx-blocks_pianoSm > *:after { display: none !important; }
+    .mx-blocks_tight > * { padding-bottom: 0; }
+}
+
+@media screen and (min-width: 1024px) { 
+    .blocks_4up > * { width: 25%; }
+}
